@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import WeatherSearch from "./WeatherSearch";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="border">
+        <div className="container">
+          <WeatherSearch />
+        </div>{" "}
+      </div>{" "}
+      <div id="source-code">
+        {" "}
+        <a href="https://github.com/gkellett5/weather_react">
+          Open-Source Code{" "}
+        </a>{" "}
+        by Gemma Kellett
+      </div>
     </div>
   );
 }
